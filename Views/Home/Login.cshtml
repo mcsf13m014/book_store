@@ -1,0 +1,46 @@
+﻿@model MvcApplication9.Models.Shop
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Student</legend>
+
+        <div class="editor-label">
+            <p>Name</p>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Bname)
+            @Html.ValidationMessageFor(model => model.Bname)
+        </div>
+
+       
+        <div class="editor-label">
+           <p>Password</p>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Bpassword)
+            @Html.ValidationMessageFor(model => model.Bpassword)
+        </div>
+
+        <p>
+            <input type="submit" value="Log In" />
+        </p>
+    </fieldset>
+}
+
+
+<div>
+    @Html.ActionLink("For Sign Up Into Your Own Account", "SignUp")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

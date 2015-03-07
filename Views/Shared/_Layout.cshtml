@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+
+    <title>Book Store</title>
+    <link href="../content/templatemo_style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    
+    <div id="templatemo_container">
+        <div id="templatemo_menu">
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></</li>
+                <li><a href="@Url.Action("Books", "Home")">Books</a></li>
+                <li><a href="@Url.Action("Release", "Home")">New Releases</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+            </ul>
+        </div>
+        <!-- end of menu -->
+
+        <div id="templatemo_header">
+            <div id="templatemo_special_offers">
+                <p>
+                    <span>25%</span> discounts for
+        purchase over Rs.10,000
+                </p>
+
+            </div>
+
+
+            <div id="templatemo_new_books">
+                <ul>
+                    <li>The Dead Key</li>
+                    <li>Creative Haven Creative Cats..</li>
+                    <li>The Struggle for Pakistan</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- end of header -->
+
+        <div id="templatemo_content">
+
+            <div id="templatemo_content_left">
+                <div class="templatemo_content_left_section">
+                    <h1>Categories</h1>
+                    <ul>
+                        <li><a href="@Url.Action("ART", "category")">Arts & Entertainment</a></li>
+                        <li><a href="@Url.Action("BUSINESS", "category")">Business</a></li>
+                        <li><a href="@Url.Action("CLASSIC", "category")">Classics</a></li>
+                        <li><a href="@Url.Action("COMEDY", "category")">Comedy</a></li>
+                        <li><a href="@Url.Action("DRAMA", "category")">Drama & Poetry</a></li>
+                        <li><a href="@Url.Action("FICTION", "category")">Fiction</a></li>
+                        <li><a href="@Url.Action("FIT", "category")">Health & Fitness</a></li>
+                        <li><a href="@Url.Action("History", "category")">History</a></li>
+                        <li><a href="@Url.Action("Mysteries", "category")">Mysteries & Thrillers</a></li>
+                        <li><a href="@Url.Action("RELIGON", "category")">Religion & Spirituality</a></li>
+                    </ul>
+                </div>
+                <div class="templatemo_content_left_section">
+                    <h1>Authors</h1>
+                    <ul>
+                        <li><a href="@Url.Action("Alice", "Author")">Alice Walker</a></li>
+                        <li><a href="@Url.Action("AMI", "Author")">Amitav Ghosh</a></li>
+                        <li><a href="@Url.Action("AHM", "Author")">Ahmad Nadeem Qasimi</a></li>
+
+                        <li><a href="@Url.Action("Bus", "Author")">Bushra Rahman</a></li>
+                        <li><a href="@Url.Action("Lewis", "Author")">C. S. Lewis</a></li>
+                        <li><a href="@Url.Action("david", "Author")">David Baldacci</a></li>
+
+                        <li><a href="@Url.Action("Faiz", "Author")">Faiz Ahmad Faiz</a></li>
+                        <li><a href="@Url.Action("Khad", "Author")">Khadija Mastoor</a></li>
+                        <li><a href="@Url.Action("Umaira", "Author")">Umera Ahmed</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="templatemo_content_left_section">
+                </div>
+            </div>
+            <!-- end of content left -->
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+
+<div id="templatemo_footer">
+    
+	       <a href="@Url.Action("Index", "Home")">Home</a> | <a href="@Url.Action("Books", "Home")">Books</a> | <a href="@Url.Action("Release", "Home")">New Releases</a> | <a href="@Url.Action("Contact", "Home")">Contact Us</a><br />
+        Copyright © KHADIJA TARIQ MCSF13M014	</div> 
+    <!-- end of footer -->
+<!--  Free CSS Template www.templatemo.com -->
+</div> <!-- end of container -->
+        </body>
+</html>
